@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ContactKstore</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(221, 205, 58);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.959);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(19, 161, 204);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>K store</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/addProduct">Add Product</a></li>
+      <li><a href="/contact">Contact</a></li>
+      
+    </ul>
+  </nav>
+  <article>
+             <ul>
+                <li><a href="https://www.facebook.com/khiemxinhtrai">Fackbook:Tran Khiem</a></li>
+                <li><a href="https://chat.zalo.me/">Zalo:Tran Duc Khiem: 0987108216</a></li >
+                <li><a >Phone:0987108216</li>
+            </ul>
+  </article>
+</section>
+
+
+<footer>
+  <p>Copyright © TranDucKhiem105 </p>
+</footer>
+
+
+
+</body>
+</html>
